@@ -4,7 +4,6 @@ site_url: https://kudo.divisioncero.com/
 site_author: Peter Vargas
 site_description: >-
   Cybersecurity Compliance | Open Source | Template | Cloud Security Alliance
-site_dir: "Kudo_Cybersecurity_Compliance"
 use_directory_urls: false
 
 # Repository
