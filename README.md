@@ -13,8 +13,7 @@ We seek to optimize the time spent on non-value-added cybersecurity topics and o
 
 ## ✨ Tools
 
-- **ybersecurity compliance** - Cybersecurity compliance open source.
-- **Cybersecurity WorldMap** - Country-by-country information on cybersecurity.
+- **Cybersecurity compliance** - Cybersecurity compliance open source.
 - **Cybersecurity Draw** - Full Flow Cybersecurity Drawing
 
 
