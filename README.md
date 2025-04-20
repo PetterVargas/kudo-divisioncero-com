@@ -128,7 +128,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## 🤝 Third-Party Code and Information
 
-This project is possible thank you a:
+This project is made possible thanks to:
 
 - [Turborepo](https://turbo.build/)
 - [Sistema de Clasificación Geoespacial de las Naciones Unidas (UN M49)](https://en.wikipedia.org/wiki/UN_M49) - Basemap
