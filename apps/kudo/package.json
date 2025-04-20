@@ -1,0 +1,11 @@
+{
+  "name": "kudo",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "docker run --rm -it -p 3002:8000 -v ${PWD}:/docs squidfunk/mkdocs-material:latest",
+    "build": "docker run --rm -it -v ${PWD}:/docs squidfunk/mkdocs-material:latest build"
+  }
+}
+  

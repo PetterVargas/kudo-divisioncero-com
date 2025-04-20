@@ -1,0 +1,189 @@
+# Project information
+site_name: Kudo - Cybersecurity Compliance
+site_url: https://kudo.divisioncero.com/
+site_author: Peter Vargas
+site_description: >-
+  Cybersecurity Compliance | Open Source | Template | Cloud Security Alliance
+site_dir: "Kudo_Cybersecurity_Compliance"
+use_directory_urls: false
+
+# Repository
+repo_name: PetterVargas/DivisionCero.com
+repo_url: https://github.com/PetterVargas/DivisionCero.com
+edit_uri: edit/main/docs/
+icon:
+  repo: fontawesome/brands/github
+
+# Copyright
+copyright: Copyright &copy; 2025 DivisiónCero
+
+nav:
+  - Home: index.md
+  - Policies: policies/policies.md
+  - Domains CSA: best-practices/csa.md
+
+# Customization
+theme:
+  name: material
+  custom_dir: docs/overrides
+  logo: assets/divisioncero-logo.png
+  favicon: assets/favicon.ico
+  language: en
+
+  palette:
+
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: light green
+      accent: light blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: light green
+      accent: light blue
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to system preference
+  
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.prune
+    - toc.follow
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - announce.dismiss
+    - navigation.footer
+    - content.action.
+    - content.tabs.link
+    - content.tooltips
+    - navigation.path
+    - content.code.annotate
+    - content.code.copy
+    - navigation.footer
+    - navigation.prune
+    - content.action.edit
+    - content.action.view
+  
+  icon:
+    previous: fontawesome/solid/angle-left
+    next: fontawesome/solid/angle-right
+    repo: fontawesome/brands/github
+    edit: material/pencil 
+    view: material/eye
+
+markdown_extensions:
+  # Python Markdown
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.highlight
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - pymdownx.snippets
+  - pymdownx.critic
+
+extra_css:
+  - overrides/stylesheets/extra.css
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css
+
+extra_javascript:
+  - overrides/javascripts/iconsearch_index.js
+  - overrides/javascripts/extra.js
+  - overrides/javascripts/katex.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js
+  - https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js
+  - https://polyfill.io/v3/polyfill.min.js?features=es6
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js
+
+extra:
+  alternate:
+    - name: Español
+      link: /es/
+      lang: es
+  
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/PetterVargas/divisioncero.com
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/divisioncero
+    - icon: fontawesome/brands/instagram
+      link: https://www.instagram.com/divisioncero/
+    - icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/in/petervargas/
+    - icon: fontawesome/brands/discord
+      link: https://www.discord.com/divisioncero/
+
+  homepage: https://kudo.divisioncero.com
+
+  consent:
+    title: Cookie consent
+    description: >- 
+      We use cookies to recognize your repeated visits and preferences, as well
+      as to measure the effectiveness of our documentation and whether users
+      find what they're searching for. With your consent, you're helping us to
+      make our documentation better.
+  
+  analytics:
+    provider: google
+    property: GTM-TCV984S 
+    feedback:
+      title: Was this page helpful?
+      ratings:
+        - icon: material/emoticon-happy-outline
+          name: This page was helpful
+          data: 1
+          note: >-
+            Thanks for your feedback!
+        - icon: material/emoticon-sad-outline
+          name: This page could be improved
+          data: 0
+          note: >- 
+            Thanks for your feedback! Help us improve this page by
+            using our <a href="..." target="_blank" rel="noopener">feedback form</a>.
+
+  version:
+    provider: mike
+    default: latest
