@@ -18,7 +18,7 @@ copyright: Copyright &copy; 2025 DivisiónCero
 nav:
   - Home: index.md
   - Policies: policies/policies.md
-  - Domains CSA: best-practices/csa.md
+  - Domains CSA: domains-csa/domains-csa.md
 
 # Customization
 theme:
