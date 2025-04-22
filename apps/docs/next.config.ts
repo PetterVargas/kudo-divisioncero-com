@@ -7,6 +7,11 @@ const nextConfig: NextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    loader: "imgix",
+    path: "",
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
