@@ -16,9 +16,80 @@ icon:
 copyright: Copyright &copy; 2025 DivisiónCero
 
 nav:
-  - Home: index.md
-  - Policies: policies/policies.md
-  - Domains CSA: domains-csa/domains-csa.md
+  - Overview: index.md
+  - Policies:
+    - Policies: policies/index.md
+    - Information Security Policy: policies/information-security-policy.md
+    - Statement of Applicability (SoA): policies/statement-of-applicability-SoA.md
+    - Information Security Governance: policies/information-security-governance.md
+    - Information Security Framework Policy: policies/information-security-framework-policy.md
+    - Information Security Committee: policies/information-security-committee.md
+    - Management Commitment: policies/management-commitment.md
+    - Information Security Risk Matrix: policies/information-security-risk-matrix.md
+    - Control Measurement Evaluation Plan: policies/control-measurement-evaluation-plan.md
+    - Security Governance Role Model: policies/security-governance-role-model.md
+    - Internal Security Audit Policy: policies/internal-security-audit-policy.md
+    - Technical Audit Procedure: policies/technical-audit-procedure.md
+    - Annual Audit Plan: policies/annual-audit-plan.md
+    - Corrective Actions Register Plan: policies/corrective-actions-register-plan.md
+    - Secure Development Policy: policies/secure-development-policy.md
+    - Secure Coding Standard: policies/secure-coding-standard.md
+    - Code Review Security Testing: policies/code-review-security-testing.md
+    - Secure API Integration Guidelines: policies/secure-api-integration-guidelines.md
+    - Business Continuity Policy: policies/business-continuity-policy.md
+    - Operational Continuity Plan: policies/operational-continuity-plan.md
+    - Disaster Recovery Plan: policies/disaster-recovery-plan.md
+    - BCP & DRP Testing Strategy: policies/bcp-drp-testing-strategy.md
+    - Change Management Policy: policies/change-management-policy.md
+    - Version Control Process: policies/version-control-process.md
+    - Critical Production Change Log: policies/critical-production-change-log.md
+    - Data Encryption Policy: policies/data-encryption-policy.md
+    - Cryptographic Key Inventory: policies/cryptographic-key-inventory.md
+    - Digital Certificate Management: policies/digital-certificate-management.md
+    - Third Party Assessment Policy: policies/third-party-assessment-policy.md
+    - Critical Supplier Due Diligence: policies/critical-supplier-due-diligence.md
+    - Security Clauses in Contracts: policies/security-clauses-in-contracts.md
+    - Datacenter Physical Security Policy: policies/datacenter-physical-security-policy.md
+    - Physical Access Control: policies/physical-access-control.md
+    - Visitor Log Access: policies/visitor-log-access.md
+    - Electrical Continuity Plan: policies/electrical-continuity-plan.md
+    - Contingency Disasters: policies/contingency-disasters.md
+    - Compliance Certifications: policies/compliance-certifications.md
+    - Personal Data Protection Policy: policies/personal-data-protection-policy.md
+    - Information Classification: policies/information-classification.md
+    - Retention and Disposal Policy: policies/retention-and-disposal-policy.md
+    - Encryption Mechanisms: policies/encryption-mechanisms.md
+    - Corporate Cybersecurity Governance: policies/corporate-cybersecurity-governance.md
+    - Cybersecurity Risk Matrix: policies/cybersecurity-risk-matrix.md
+    - Risk Treatment Plan: policies/risk-treatment-plan.md
+    - Regulatory Compliance Policy: policies/regulatory-compliance-policy.md
+    - Employee Lifecycle Security Policy: policies/employee-lifecycle-security-policy.md
+    - NDA: policies/nda.md
+    - Security Awareness Training: policies/security-awareness-training.md
+    - Secure Offboarding Process: policies/secure-offboarding-process.md
+    - Access Control Policy: policies/access-control-policy.md
+    - User Provisioning Procedure: policies/user-provisioning-procedure.md
+    - Privileged Access Management: policies/privileged-access-management.md
+    - Access Authentication Logs: policies/access-authentication-logs.md
+    - Cloud Interoperability Policy: policies/cloud-interoperability-policy.md
+    - Migration Portability Strategy: policies/migration-portability-strategy.md
+    - Virtual Environment Security Policy: policies/virtual-environment-security-policy.md
+    - Patch Hardening Management: policies/patch-hardening-management.md
+    - Container Security Control: policies/container-security-control.md
+    - Security Event Monitoring Policy: policies/security-event-monitoring-policy.md
+    - SIEM Event Correlation: policies/siem-event-correlation.md
+    - Incident Response Plan: policies/incident-response-plan.md
+    - Log Registration Retention: policies/log-registration-retention.md
+    - Incident Management Policy: policies/incident-management-policy.md
+    - Digital Forensic Investigation: policies/digital-forensic-investigation.md
+    - Incident Log Lessons Learned: policies/incident-log-lessons-learned.md
+    - Vulnerability Management Policy: policies/vulnerability-management-policy.md
+    - Continuous Vulnerability Scanning: policies/continuous-vulnerability-scanning.md
+    - Remediation Plan Exceptions: policies/remediation-plan-exceptions.md
+    - Endpoint Management Policy: policies/endpoint-management-policy.md
+    - BYOD Device Control: policies/byod-device-control.md
+    - Endpoint Patching Configuration: policies/endpoint-patching-configuration.md
+  - Baseline: baseline/index.md
 
 # Customization
 theme:
@@ -39,7 +110,7 @@ theme:
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
-      primary: light green
+      primary: blue grey
       accent: light blue
       toggle:
         icon: material/weather-night
@@ -48,7 +119,7 @@ theme:
     # Palette toggle for dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
-      primary: light green
+      primary: blue grey
       accent: light blue
       toggle:
         icon: material/weather-sunny
@@ -68,7 +139,7 @@ theme:
     - search.share
     - announce.dismiss
     - navigation.footer
-    - content.action.
+    - content.action
     - content.tabs.link
     - content.tooltips
     - navigation.path
