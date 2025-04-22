@@ -17,6 +17,17 @@ $$
 > Applies to governments, investors, companies, clients, users among others...
 
 
+<div align="center">
+  <div align="center">
+    <a href="https://divisioncero.com/home/cybersecurity-kit" target="_blank" style="text-decoration: none;">
+      <button style="background-color: #0078D4; color: white; border: none; padding: 10px 20px; font-size: 16px; border-radius: 5px; cursor: pointer;">
+        Cybersecurity Kit Download
+      </button>
+    </a>
+  </div>
+</div>
+
+
 ## 🛡️ Cybersecurity Policy
 
 :   !!! tip "Cybersecurity Policy"
@@ -82,7 +93,7 @@ graph LR
 
 This means that the documents are not only applicable to a specific project or team but are intended to be used across the entire organization.
 
-All documents are created and maintained in a hypothetical business context.
+All documents are created and maintained in a hypothetical business context is your name is `Kudo`.
 
 ### 🌐 Hypothetical Business Context
 
