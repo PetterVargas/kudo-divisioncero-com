@@ -4,6 +4,9 @@ const nextConfig: NextConfig = {
   /* config options here */
   images: {
     domains: ["upload.wikimedia.org"],
+    loader: "imgix",
+    path: "",
+    unoptimized: true,
   },
 };
 
