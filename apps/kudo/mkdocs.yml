@@ -89,7 +89,26 @@ nav:
     - Endpoint Management Policy: policies/endpoint-management-policy.md
     - BYOD Device Control: policies/byod-device-control.md
     - Endpoint Patching Configuration: policies/endpoint-patching-configuration.md
-  - Baseline: baseline/index.md
+  - Baseline: 
+    - Baseline: baseline/index.md
+    - A&A: baseline/AAA/index.md
+    - AIS: baseline/AIS/index.md
+    - BCR: baseline/BCR/index.md
+    - CCC: baseline/CCC/index.md
+    - CEK: baseline/CEK/index.md
+    - DCS: baseline/DCS/index.md
+    - DSP: baseline/DSP/index.md
+    - GRC: baseline/GRC/index.md
+    - HRS: baseline/HRS/index.md
+    - IAM: baseline/IAM/index.md
+    - IPY: baseline/IPY/index.md
+    - IVS: baseline/IVS/index.md
+    - LOG: baseline/LOG/index.md
+    - SEF: baseline/SEF/index.md
+    - STA: baseline/STA/index.md
+    - TVM: baseline/TVM/index.md
+    - UEM: baseline/UEM/index.md
+    
 
 # Customization
 theme:
