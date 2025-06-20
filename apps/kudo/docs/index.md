@@ -4,13 +4,16 @@ hide:
 ---
 
 <div align="center">
-  <h1>🎯 Cybersecurity Compliance 🌍</h1>
+  <h1>🎯 Kudo 🌍</h1>
+  <h4>The open-source and practical book on cybersecurity</h4>
 </div>
+
+
 
 The formula is simple:
 
 $$
-\text{Quality} + \text{Security} = \text{Trust}
+\text{Concordance} + \text{Trust} = \text{Cybersecurity}
 $$
 
 
@@ -34,7 +37,7 @@ $$
 
         We believe in a digital world built on freedom, responsibility, and integrity.
 
-        Cybersecurity is not just about defense — it’s about mutual respect. It’s about striving to do your best that every interaction, every line of code, and every user experience reflects a commitment to doing right things, not just the right things.
+        Cybersecurity is not just about defense or attack — it’s about mutual respect. It’s about striving to do your best that every interaction, every line of code, and every user experience reflects a commitment agreement on what is defined in policies and procedures that shine for their extensive and theoretical content.
 
 
 ## 🤝 Sections
@@ -68,21 +71,43 @@ We're referring to the [Cloud Security Alliance](https://cloudsecurityalliance.o
 graph LR
   CSA[Cloud Security Alliance]
   DOMAINS[17 Domains]
-  CONTROLS[197 Controls]
-  ISO[ISO/IEC 27001]
-  SOC2[SOC 2]
-  PCI[PCI-DSS]
-  NIST[NIST 800-53]
-  OTHERS[others that exist or are being created]
-  NOTWHEEL[Note: We're not reinventing the wheel]
+  DOM1[A&A - Audit and Assurance]
+  DOM2[AIS – Application and Interface Security]
+  DOM3[BCR – Business Continuity and Operational Resilience]
+  DOM4[CCC – Change Control and Configuration Management]
+  DOM5[CEK – Cryptography, Encryption, and Key Management]
+  DOM6[STA - Supply Chain Mgmt, Transparency & Accountability]
+  DOM7[DCS – Datacenter Security]
+  DOM8[DSP – Data Security and Privacy Lifecycle Management]
+  DOM9[GRC – Governance, Risk, and Compliance]
+  DOM10[HRS – Human Resources Security]
+  DOM11[IAM – Identity and Access Management]
+  DOM12[IPY – Interoperability and Portability]
+  DOM13[IVS – Infrastructure and Virtualization Security]
+  DOM14[LOG – Logging and Monitoring]
+  DOM15[SEF – Security Incident Management, E-Discovery & Forensics]
+  DOM16[TVM – Threat and Vulnerability Management]
+  DOM17[UEM – Universal Endpoint Management]
+  NOTWHEEL[Note: We only use Cloud Security Alliance domain names as a reference.]
 
   CSA --> DOMAINS
-  DOMAINS --> CONTROLS
-  CONTROLS --> ISO
-  CONTROLS --> SOC2
-  CONTROLS --> PCI
-  CONTROLS --> NIST
-  CONTROLS --> OTHERS
+  DOMAINS --> DOM1
+  DOMAINS --> DOM2
+  DOMAINS --> DOM3
+  DOMAINS --> DOM4
+  DOMAINS --> DOM5
+  DOMAINS --> DOM6
+  DOMAINS --> DOM7
+  DOMAINS --> DOM8
+  DOMAINS --> DOM9
+  DOMAINS --> DOM10
+  DOMAINS --> DOM11
+  DOMAINS --> DOM12
+  DOMAINS --> DOM13
+  DOMAINS --> DOM14
+  DOMAINS --> DOM15
+  DOMAINS --> DOM16
+  DOMAINS --> DOM17
   NOTWHEEL
 ```
 
@@ -93,7 +118,7 @@ graph LR
 
 This means that the documents are not only applicable to a specific project or team but are intended to be used across the entire organization.
 
-All documents are created and maintained in a hypothetical business context is your name is `Kudo`.
+All documents are created and maintained in a hypothetical business context is your name is `DivisionCero`.
 
 ### 🌐 Hypothetical Business Context
 
@@ -164,7 +189,7 @@ Each line of code is a link in a global chain with the potential to improve peop
 
 ??? information "Change Control"
 
-    Change control is carried out continuously with traceability through the git flow; specifically through Pull Requests (PR), which can be validated in the following [repository](https://github.com/PetterVargas/divisioncero.com). At the top right of the website, there is a direct link.
+    Change control is carried out continuously with traceability through the git flow; specifically through Pull Requests (PR), which can be validated in the following [repository](https://github.com/PetterVargas/kudo-divisioncero-com). At the top right of the website, there is a direct link.
 
 ??? information "Scope"
 
