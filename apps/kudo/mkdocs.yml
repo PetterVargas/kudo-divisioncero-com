@@ -1,13 +1,13 @@
 # Project information
-site_name: Kudo - Cybersecurity Compliance
+site_name: Kudo
 site_url: https://kudo.divisioncero.com/
 site_author: Peter Vargas
 site_description: >-
   Cybersecurity Compliance | Open Source | Template | Cloud Security Alliance
 
 # Repository
-repo_name: PetterVargas/DivisionCero.com
-repo_url: https://github.com/PetterVargas/DivisionCero.com
+repo_name: PetterVargas/kudo-divisioncero-com
+repo_url: https://github.com/PetterVargas/kudo-divisioncero-com
 edit_uri: edit/main/docs/
 icon:
   repo: fontawesome/brands/github
