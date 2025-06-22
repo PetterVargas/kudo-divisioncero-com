@@ -3,17 +3,33 @@
 
 ## Open source baseline
 
-- x
+Prioritize before delving into any cybersecurity framework.
+
+??? info "1. Changes control processes with QA and testing validation."
+
+    Pending to detail a little.
+
+
+??? info "2. Separation of environments for development, testing, and production."
+
+    Pending to detail a little
+
+
+??? info "3. Restrict access to infrastructure."
+
+    Pending to detail a little
 
 
 ## Domain courses
 
-- x
+!!! example "Course - CCC – Change Control and Configuration Management"
+        
+    **DivisionCero courses: [CCC – Change Control and Configuration Management](https://divisioncero.com/courses?from=kudo.divisioncero.com)** - A comprehensive course covering the principles and practices of auditing and assurance services, including risk assessment, internal controls, and compliance with standards.
 
 
 ## Tools
 
-- [xyz](https://divisioncero.com/?from=kudo.divisioncero.com): Description tools.
+- [DivisionCero tools](https://divisioncero.com/tools?from=kudo.divisioncero.com)
 
 
 ## Common problems on companies
