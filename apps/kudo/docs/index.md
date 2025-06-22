@@ -56,21 +56,134 @@ $$
 ## 🎯 Why use this site?
 
 - [X] **Trust among stakeholders:** Applies to investors, governments, companies, clients, and users.  
-- [X] **Define baseline policies:** Establishes a common framework for security management.  
+- [X] **Define baseline policies:** Establishes a common framework for cybersecurity management.  
 - [X] **Team training:** Supports initial and ongoing training for collaborators.  
-- [X] **Simplify audits:** Demonstrates a structured approach during external evaluations.  
+- [X] **Simplify audits:** Demonstrates a structured approach during internal and external evaluations.  
 - [X] **Scale security practices:** Enables replication of best practices across different contexts.  
 - [X] **Optimize Business as Usual (BaU):** Improves operational efficiency and risk management.  
 
 
 ## 🔍 Compliance
 
-We're referring to the [Cloud Security Alliance](https://cloudsecurityalliance.org/?from=kudo.divisioncero.com) because we've found it aligns with the reality of cloud environments. We invite you to visit their website and attend their events; they're great role models.
+:   !!! info "Our Reference"
+
+        We're referring to the [Cloud Security Alliance](https://cloudsecurityalliance.org/?from=kudo.divisioncero.com) because we've found it aligns with the reality of cloud environments. We invite you to visit their website and attend their events; they're great role models.
+
+
+### Shared responsibility
+
+It's inevitable to talk about compliance without considering the three main cloud service models.
+
+#### Cloud Service Models
+
+``` mermaid
+graph TD
+  subgraph "Cloud Service Models"
+    subgraph "IaaS"
+        B1["OS & Apps"]
+        B2["Network Config"]
+        B3["Security Groups"]
+    end
+    
+    subgraph "PaaS"
+        C1["App Development"]
+        C2["User Management"]
+    end
+    
+    subgraph "SaaS"
+        D1["User Access Control"]
+        D2["Data Usage"]
+    end
+  end
+```
+
+``` mermaid
+graph TD
+    subgraph "Responsibility Distribution"
+        subgraph "IaaS"
+            I1["Customer: 80%"]
+            I2["Provider: 20%"]
+        end
+        
+        subgraph "PaaS"
+            P1["Customer: 50%"]
+            P2["Provider: 50%"]
+        end
+        
+        subgraph "SaaS"
+            S1["Customer: 20%"]
+            S2["Provider: 80%"]
+        end
+    end
+    
+    %% Invisible connections to maintain alignment
+    I1 ~~~ P1
+    P1 ~~~ S1
+    I2 ~~~ P2
+    P2 ~~~ S2
+```
+
+#### Cloud Provider Responsibilities
+
+``` mermaid
+graph TD
+  subgraph "Cloud Provider Responsibility"
+      E1["Physical Infrastructure"]
+      E2["Network Infrastructure"]
+      E3["Hypervisor"]
+      E4["OS (for PaaS)"]
+      E5["Application (for SaaS)"]
+  end
+```
+
+#### Customer Responsibilities
+
+``` mermaid
+graph TD
+  subgraph "Customer Responsibility"
+    A1["Data & Content"]
+    A2["Identity & Access Management"]
+    A3["Client-side Security"]
+    A4["Platform & Application Config"]
+  end
+```
+
+#### Shared Responsibility Explanation
+
+The shared responsibility model defines security obligations across different cloud service models:
+
+- **IaaS (Infrastructure as a Service)**: The provider manages the physical infrastructure, network, and virtualization. Customers are responsible for operating systems, applications, data, and configurations.
+
+- **PaaS (Platform as a Service)**: The provider extends management to include operating systems and middleware. Customers focus on applications and data while having less infrastructure management burden.
+
+- **SaaS (Software as a Service)**: The provider manages nearly everything, including the application itself. Customers are primarily responsible for data, user access controls, and compliance requirements.
+
+As you move from IaaS to SaaS, more responsibility shifts to the cloud provider, but data protection and access management always remain customer responsibilities.
+
+### Kudo Domains
+
+Domains are the core components of the Kudo framework, correlated with the Cloud Security Alliance domains.
 
 ``` mermaid
 graph LR
-  CSA[Cloud Security Alliance]
-  DOMAINS[17 Domains]
+  KUDO[Kudo]
+  DOM_1[Organizational Concordance
+  GRC > A&A]
+  DOM_2[Application Security 
+  AIS > IPY]
+  DOM_3[Organizational Continuity and Change 
+  BCR > CCC]
+  DOM_4[Infrastructure Protection 
+  DCS > IVS > CEK]
+  DOM_5[Human Talent and Supplier Assurance 
+  HRS > STA]
+  DOM_6[Device and Endpoint Management 
+  IAM > UEM]
+  DOM_7[Security Analysis, Detection, and Response 
+  TVM > LOG > SEF]
+  DOM_8[Data Protection
+  DSP]
+
   DOM1[A&A - Audit and Assurance]
   DOM2[AIS – Application and Interface Security]
   DOM3[BCR – Business Continuity and Operational Resilience]
@@ -88,29 +201,54 @@ graph LR
   DOM15[SEF – Security Incident Management, E-Discovery & Forensics]
   DOM16[TVM – Threat and Vulnerability Management]
   DOM17[UEM – Universal Endpoint Management]
-  NOTWHEEL[Note: We only use Cloud Security Alliance domain names as a reference.]
+  
+  CSA[Cloud Security Alliance]
 
-  CSA --> DOMAINS
-  DOMAINS --> DOM1
-  DOMAINS --> DOM2
-  DOMAINS --> DOM3
-  DOMAINS --> DOM4
-  DOMAINS --> DOM5
-  DOMAINS --> DOM6
-  DOMAINS --> DOM7
-  DOMAINS --> DOM8
-  DOMAINS --> DOM9
-  DOMAINS --> DOM10
-  DOMAINS --> DOM11
-  DOMAINS --> DOM12
-  DOMAINS --> DOM13
-  DOMAINS --> DOM14
-  DOMAINS --> DOM15
-  DOMAINS --> DOM16
-  DOMAINS --> DOM17
-  NOTWHEEL
+  KUDO --> DOM_1
+  KUDO --> DOM_2
+  KUDO --> DOM_3
+  KUDO --> DOM_4
+  KUDO --> DOM_5
+  KUDO --> DOM_6
+  KUDO --> DOM_7
+  KUDO --> DOM_8
+  
+  DOM_1 --> DOM1
+  DOM_1 --> DOM9
+  DOM_2 --> DOM2
+  DOM_2 --> DOM12
+  DOM_3 --> DOM3
+  DOM_3 --> DOM4
+  DOM_4 --> DOM7
+  DOM_4 --> DOM13
+  DOM_4 --> DOM5
+  DOM_5 --> DOM10
+  DOM_5 --> DOM6
+  DOM_6 --> DOM11
+  DOM_6 --> DOM17
+  DOM_7 --> DOM16
+  DOM_7 --> DOM14
+  DOM_7 --> DOM15
+  DOM_8 --> DOM8
+  
+  DOM1 --> CSA
+  DOM2 --> CSA
+  DOM3 --> CSA
+  DOM4 --> CSA
+  DOM5 --> CSA
+  DOM6 --> CSA
+  DOM7 --> CSA
+  DOM8 --> CSA
+  DOM9 --> CSA
+  DOM10 --> CSA
+  DOM11 --> CSA
+  DOM12 --> CSA
+  DOM13 --> CSA
+  DOM14 --> CSA
+  DOM15 --> CSA
+  DOM16 --> CSA
+  DOM17 --> CSA
 ```
-
 
 ## 🏛️ Document Governance
 
@@ -119,6 +257,34 @@ graph LR
 This means that the documents are not only applicable to a specific project or team but are intended to be used across the entire organization.
 
 All documents are created and maintained in a hypothetical business context is your name is `DivisionCero`.
+
+## 👥 Organizational Structure
+
+The organizational structure at DivisionCero follows a hierarchical model, with clear reporting lines and functional departments that facilitate governance, accountability, and specialization.
+
+``` mermaid
+graph TD
+    CEO[CEO] --> CTO[Chief Technology Officer]
+    CEO --> CFO[Chief Financial Officer]
+    CEO --> COO[Chief Operations Officer]
+    CEO --> CISO[Chief Information Security Officer]
+    CEO --> CLO[Chief Legal Officer]
+    
+    CTO --> SWD[Software Development]
+    CTO --> OPS[Operations]
+    
+    CISO --> CSEC[Cybersecurity Team]
+    CISO --> GRCT[GRC Team]
+    
+    COO --> PROC[Procurement]
+    COO --> HR[Human Resources]
+    
+    CLO --> LEG[Legal]
+    CLO --> PRIV[Privacy Office]
+    
+    CFO --> FIN[Finance]
+    CFO --> IA[Internal Audit]
+```
 
 ### 🌐 Hypothetical Business Context
 
@@ -130,11 +296,26 @@ All documents are created and maintained in a hypothetical business context is y
 
 ### 🪪 Roles and Responsibilities
 
-- [X] **CISO or similar roles:** Sponsor of the information security and governance policy.
-- [X] **GRC / Risk:** Curators of the document architecture. Responsible for the document lifecycle.
-- [X] **Process Owners:** Responsible for keeping the policies and procedures applicable to their areas up to date.
-- [X] **Internal Audit / Quality:** Verify validity and traceability.
-- [X] **Collaborators:** Responsible for complying with established policies and procedures.
+- [X] **CEO (Chief Executive Officer):** Ultimately accountable for organizational security posture and risk management strategy.
+- [X] **CISO (Chief Information Security Officer):** Primary sponsor of the information security policy framework and governance structure.
+- [X] **Cybersecurity Team:** Implements security controls, monitors threats, and responds to security incidents.
+- [X] **GRC Team (Governance, Risk & Compliance):** Curators of the document architecture and responsible for the policy lifecycle management.
+- [X] **CTO (Chief Technology Officer) & Technology Teams:** Ensure secure implementation of systems and infrastructure following defined policies.
+- [X] **Internal Audit:** Provides independent verification of policy compliance and control effectiveness.
+- [X] **Legal & Privacy Office:** Ensures alignment with regulatory requirements and data protection obligations.
+- [X] **COO (Chief Operations Officer):** Oversees day-to-day operations ensuring security procedures are integrated into business processes.
+- [X] **CLO (Chief Legal Officer):** Manages legal risk associated with cybersecurity incidents and ensures regulatory compliance.
+- [X] **CFO (Chief Financial Officer):** Ensures appropriate financial resources for security initiatives and evaluates security investments.
+- [X] **Software Development:** Implements secure development practices and addresses security requirements in software products.
+- [X] **Operations:** Maintains secure infrastructure configurations and operational security controls.
+- [X] **Legal/Privacy:** Provides legal guidance on security policies and handles security-related legal issues.
+- [X] **Cybersecurity Team:** Executes security monitoring, incident response, and technical security assessments.
+- [X] **GRC Team:** Manages risk assessments, compliance monitoring, and the security governance framework.
+- [X] **Procurement:** Evaluates vendor security practices and incorporates security requirements in contracts.
+- [X] **Human Resources:** Manages security training, background checks, and security aspects of personnel processes.
+- [X] **Finance:** Manages financial aspects of the security program and security-related expenditures.
+- [X] **Internal Audit:** Conducts independent assessments of security controls and provides assurance of effectiveness.
+- [X] **All Staff:** Responsible for understanding and complying with established policies and procedures.
 
 ### 🔄 Document life cycle 
 

@@ -91,10 +91,10 @@ nav:
     - Endpoint Patching Configuration: policies/endpoint-patching-configuration.md
   - Baseline: 
     - Baseline: baseline/index.md
-    - A&A: baseline/AAA/index.md
+    - A&A: baseline/A&A/index.md
     - AIS: baseline/AIS/index.md
     - BCR: baseline/BCR/index.md
-    - CCC: baseline/CCC/index.md
+    - CCC: baseline/CCC/index.md  
     - CEK: baseline/CEK/index.md
     - DCS: baseline/DCS/index.md
     - DSP: baseline/DSP/index.md

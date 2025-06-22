@@ -155,12 +155,12 @@ hide:
 
 </div>
 
-[Data Center Physical and Environmental Security Policy]: documents/datacenter-physical-security-policy.md  
-[Physical Access Control Procedure for Critical Rooms]: documents/physical-access-control.md  
-[Visitor Log and Physical Access Auditing]: documents/visitor-log-access.md  
-[Electrical Continuity and Environmental Control Plan (UPS, HVAC, Fire Detection)]: documents/electrical-continuity-plan.md  
-[Contingency Procedures for Physical Disasters (Flood, Fire, Earthquakes)]: documents/contingency-disasters.md  
-[Compliance Validation with Certifications (e.g., ISO 27001, TIER, SSAE 18) of the Data Center Provider]: documents/compliance-certifications.md  
+[Data Center Physical and Environmental Security Policy]: datacenter-physical-security-policy.md  
+[Physical Access Control Procedure for Critical Rooms]: physical-access-control.md  
+[Visitor Log and Physical Access Auditing]: visitor-log-access.md  
+[Electrical Continuity and Environmental Control Plan (UPS, HVAC, Fire Detection)]: electrical-continuity-plan.md  
+[Contingency Procedures for Physical Disasters (Flood, Fire, Earthquakes)]: contingency-disasters.md  
+[Compliance Validation with Certifications (e.g., ISO 27001, TIER, SSAE 18) of the Data Center Provider]: compliance-certifications.md  
 
 
 ## DSP – Data Security and Privacy Lifecycle Management

@@ -41,7 +41,7 @@ hide:
 
 </div>
 
-[A&A - Audit and Assurance]: AAA/index.md
+[A&A - Audit and Assurance]: A&A/index.md
 [AIS - Application and Interface Security]: AIS/index.md
 [BCR - Business Continuity and Operational Resilience]: BCR/index.md
 [CCC - Change Control and Configuration Management]: CCC/index.md
